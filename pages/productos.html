@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos-generales.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/productos.css">
+    <script src="https://kit.fontawesome.com/be11f56c4f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../favicon.jpg" type="image/x-jpg">
+    <title>Productos - TechNova</title>
+</head>
+
+<body>
+    <header>
+        <a class="header-link" href="../index.html">
+            <img class="logo" src="../resources/img/logo.jpg" alt="Logo">
+            <h1>TechNova</h1>
+        </a>
+        <div class="header-botones">
+            <a href="#" class="btn" role="button">Iniciar sesión</a>
+            <a href="#" class="btn" role="button">Regístrate</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="productos-main">
+        <div class="productos-header">
+            <h1>Nuestros Productos</h1>
+            <p>Descubre nuestra amplia gama de accesorios tecnológicos y dispositivos electrónicos</p>
+            
+            <div class="filtros-container">
+                <label for="categoria-select">Filtrar por categoría:</label>
+                <select id="categoria-select">
+                    <option value="todos">Todos los productos</option>
+                    <option value="audio">Audio</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="camaras">Cámaras</option>
+                </select>
+            </div>
+        </div>
+
+        <section id="productos-container" class="productos-grid"></section>
+    </main>
+
+    <footer>
+        <div class="div1">
+            <p>Nuestras Políticas</p>
+            <a href="#">Política de cookies</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+        <div class="div2">
+            <p>Enlaces directos</p>
+            <a href="#">Inicia Sesión</a>
+            <a href="./productos.html">Productos</a>
+            <a href="#">Contactanos</a>
+        </div>
+        <div class="div3">
+            <div class="container-redes">
+                <h4>Siguenos en:</h4>
+                <div class="links-sociales">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="../resources/img/logo.jpg" alt="" width="50px" height="50px">
+                <h1>TechNova</h1>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/productos.js"></script>
+</body>
+
+</html>

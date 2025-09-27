@@ -1,0 +1,90 @@
+footer {
+    background-color: #11a4d1;
+    color: #f9f5f0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) minmax(auto, 350px);
+    height: 250px;
+    padding: 0 100px;
+}
+
+.div1{
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.div2{
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div1 p,
+.div2 p {
+    margin: 5px 0;
+    color: #f9f5f0;
+    font-weight: 700;
+}
+
+.div1 a,
+.div2 a{
+    color: #ddd;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.div1 a:hover,
+.div2 a:hover{
+    color: #f9f5f0;
+    font-weight: 700;
+}
+
+
+
+.div3{
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    justify-content: center;
+}
+
+.div3 .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.div3 .container-redes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div3 .links-sociales {
+    display: flex;
+    gap: 1rem;
+}
+
+.div3 .links-sociales a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #f9f5f0;
+    transition: all 0.3s;
+}
+
+.div3 .links-sociales a:hover {
+    background-color: #e6b17e;
+    transform: translateY(-3px);
+}

@@ -1,0 +1,30 @@
+nav {
+    background-color: #595758;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0 -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 24px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f8f1e4;
+    font-weight: 600;
+    padding: 16px 0;
+    display: inline-block;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+nav ul li a:hover {
+    color: #f1c27d;
+    border-bottom: 3px solid #f1c27d;
+}

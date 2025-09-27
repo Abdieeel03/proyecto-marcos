@@ -1,0 +1,112 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Audífonos Bluetooth X15",
+            "marca": "TechSound",
+            "categoria": "audio",
+            "precio": 89.99,
+            "imagen": "../resources/img/Audifonos.jpg",
+            "descripcion": "Audífonos inalámbricos con cancelación de ruido y batería de larga duración."
+        },
+        {
+            "id": 2,
+            "nombre": "Audífonos Orejas de Gato",
+            "marca": "CuteTech",
+            "categoria": "audio",
+            "precio": 45.99,
+            "imagen": "../resources/img/Audifonos2.jpg",
+            "descripcion": "Adorables audífonos con diseño de orejas de gato y luces LED."
+        },
+        {
+            "id": 3,
+            "nombre": "Parlante Bluetooth T7 Lite",
+            "marca": "SoundWave",
+            "categoria": "audio",
+            "precio": 129.99,
+            "imagen": "../resources/img/parlante.jpg",
+            "descripcion": "Altavoz portátil resistente al agua con sonido potente."
+        },
+        {
+            "id": 4,
+            "nombre": "Power Bank 10.000mAh",
+            "marca": "Xiaomi",
+            "categoria": "accesorios",
+            "precio": 35.99,
+            "imagen": "../resources/img/cargador-portatil.jpg",
+            "descripcion": "Batería portátil de carga rápida para todos tus dispositivos móviles."
+        },
+        {
+            "id": 5,
+            "nombre": "Cámara Web C922 Pro",
+            "marca": "Logitech",
+            "categoria": "camaras",
+            "precio": 179.99,
+            "imagen": "../resources/img/camara.png",
+            "descripcion": "Cámara web profesional para streaming con grabación Full HD."
+        },
+        {
+            "id": 6,
+            "nombre": "Teclado Gaming RGB K95",
+            "marca": "TechKeys",
+            "categoria": "gaming",
+            "precio": 199.99,
+            "imagen": "../resources/img/teclado.png",
+            "descripcion": "Teclado mecánico gaming con iluminación RGB personalizable."
+        },
+        {
+            "id": 7,
+            "nombre": "Mouse Gaming Wireless Pro",
+            "marca": "GameTech",
+            "categoria": "gaming",
+            "precio": 89.99,
+            "imagen": "../resources/img/Audifonos.jpg",
+            "descripcion": "Mouse inalámbrico para gaming con alta precisión y batería duradera."
+        },
+        {
+            "id": 8,
+            "nombre": "Hub USB-C 7 en 1",
+            "marca": "ConnectPro",
+            "categoria": "accesorios",
+            "precio": 59.99,
+            "imagen": "../resources/img/combo.jpg",
+            "descripcion": "Hub multipuerto con HDMI 4K y múltiples conexiones."
+        },
+        {
+            "id": 9,
+            "nombre": "Soporte para Laptop Ajustable",
+            "marca": "ErgoTech",
+            "categoria": "accesorios",
+            "precio": 39.99,
+            "imagen": "../resources/img/cargador-portatil.jpg",
+            "descripcion": "Soporte ergonómico ajustable para laptop con mejor ventilación."
+        },
+        {
+            "id": 10,
+            "nombre": "Auriculares Gaming Pro X",
+            "marca": "GameSound",
+            "categoria": "gaming",
+            "precio": 149.99,
+            "imagen": "../resources/img/Audifonos2.jpg",
+            "descripcion": "Auriculares gaming con sonido surround y micrófono profesional."
+        },
+        {
+            "id": 11,
+            "nombre": "Cámara Deportiva 4K Ultra",
+            "marca": "ActionCam",
+            "categoria": "camaras",
+            "precio": 299.99,
+            "imagen": "../resources/img/camara.png",
+            "descripcion": "Cámara de acción 4K resistente al agua para deportes extremos."
+        },
+        {
+            "id": 12,
+            "nombre": "Altavoz Inteligente Smart Home",
+            "marca": "SmartTech",
+            "categoria": "audio",
+            "precio": 79.99,
+            "imagen": "../resources/img/parlante.jpg",
+            "descripcion": "Altavoz inteligente con asistente de voz y control del hogar."
+        }
+    ]
+}
