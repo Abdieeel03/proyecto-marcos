@@ -60,7 +60,7 @@
             "marca": "GameTech",
             "categoria": "gaming",
             "precio": 89.99,
-            "imagen": "../resources/img/Audifonos.jpg",
+            "imagen": "../resources/img/mouse-gamer.jpg",
             "descripcion": "Mouse inalámbrico para gaming con alta precisión y batería duradera."
         },
         {
@@ -69,7 +69,7 @@
             "marca": "ConnectPro",
             "categoria": "accesorios",
             "precio": 59.99,
-            "imagen": "../resources/img/combo.jpg",
+            "imagen": "../resources/img/hub-ugreen.webp",
             "descripcion": "Hub multipuerto con HDMI 4K y múltiples conexiones."
         },
         {
@@ -78,7 +78,7 @@
             "marca": "ErgoTech",
             "categoria": "accesorios",
             "precio": 39.99,
-            "imagen": "../resources/img/cargador-portatil.jpg",
+            "imagen": "../resources/img/soporte-laptop.webp",
             "descripcion": "Soporte ergonómico ajustable para laptop con mejor ventilación."
         },
         {
@@ -87,7 +87,7 @@
             "marca": "GameSound",
             "categoria": "gaming",
             "precio": 149.99,
-            "imagen": "../resources/img/Audifonos2.jpg",
+            "imagen": "../resources/img/auriculares-gamer.jpg",
             "descripcion": "Auriculares gaming con sonido surround y micrófono profesional."
         },
         {
@@ -96,7 +96,7 @@
             "marca": "ActionCam",
             "categoria": "camaras",
             "precio": 299.99,
-            "imagen": "../resources/img/camara.png",
+            "imagen": "../resources/img/camara-4k.webp",
             "descripcion": "Cámara de acción 4K resistente al agua para deportes extremos."
         },
         {
@@ -105,7 +105,7 @@
             "marca": "SmartTech",
             "categoria": "audio",
             "precio": 79.99,
-            "imagen": "../resources/img/parlante.jpg",
+            "imagen": "../resources/img/altavoz-inteligente.jpg",
             "descripcion": "Altavoz inteligente con asistente de voz y control del hogar."
         }
     ]
