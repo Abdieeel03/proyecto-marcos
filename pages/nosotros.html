@@ -1,35 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNova</title>
-    <link rel="stylesheet" href="Estilos.css">
+    <link rel="stylesheet" href="../css/estilos-generales.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nosotros.css">
     <script src="https://kit.fontawesome.com/be11f56c4f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../favicon.jpg" type="image/x-jpg">
+    <title>Nosotros - TechNova</title>
 </head>
 
 <body>
     <header>
-        <div class="header-logo">
-            <img src="Imagenes/logo.JPG" alt="" width="60px" height="60px">
-            <h1 class="titulo" tabindex="0">TechNova</h1>
+        <a class="header-link" href="../index.html">
+            <img class="logo" src="../resources/img/logo.jpg" alt="Logo">
+            <h1>TechNova</h1>
+        </a>
+        <div class="header-botones">
+            <a href="#" class="btn" role="button">Iniciar sesión</a>
+            <a href="#" class="btn" role="button">Regístrate</a>
         </div>
     </header>
+
     <nav>
         <ul>
-            <li><a href="Inicio.html">Inicio</a></li>
-            <li><a href="Productos.html">Productos</a></li>
-            <li><a href="Nosotros.html">Nosotros</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
     </nav>
 
+    <main class="nosotros-main">
+        <div class="nosotros-header">
+            <h1>Sobre Nosotros</h1>
+            <p>Conoce más sobre TechNova y el equipo que hace posible tu experiencia tecnológica</p>
+        </div>
+
+        <section class="empresa-info">
+            <div class="empresa-descripcion">
+                <h2>¿Quiénes Somos?</h2>
+                <p>
+                    TechNova es una empresa especializada en la comercialización de accesorios tecnológicos y 
+                    dispositivos electrónicos innovadores para uso cotidiano. Nos dedicamos a seleccionar y ofrecer 
+                    productos que mejoran la productividad, conectividad y experiencia digital de nuestros clientes, 
+                    con un enfoque en calidad, funcionalidad y diseño contemporáneo. Desde nuestros inicios, nos hemos 
+                    comprometido con la excelencia y la satisfacción del cliente, ofreciendo productos de las mejores 
+                    marcas y un servicio personalizado que supera las expectativas.
+                </p>
+            </div>
+
+            <div class="mision-vision-container">
+                <div class="mision-card">
+                    <h3>
+                        <i class="fa-solid fa-bullseye"></i>
+                        Misión
+                    </h3>
+                    <p>
+                        Ofrecer a nuestros clientes una amplia gama de productos tecnológicos innovadores y de calidad 
+                        que les permitan optimizar sus actividades cotidianas, mejorar su eficiencia personal y 
+                        profesional, y disfrutar de una experiencia tecnológica integral, accesible y satisfactoria. 
+                        Nos esforzamos por ser el socio confiable en el mundo de la tecnología, brindando soluciones 
+                        que transforman vidas.
+                    </p>
+                </div>
+
+                <div class="vision-card">
+                    <h3>
+                        <i class="fa-solid fa-eye"></i>
+                        Visión
+                    </h3>
+                    <p>
+                        Liderar el mercado de accesorios tecnológicos mediante la selección cuidadosa de productos, 
+                        la excelencia en servicio al cliente y la adaptación constante a las nuevas tendencias 
+                        tecnológicas, diferenciándonos por nuestra capacidad de anticipar y satisfacer las necesidades 
+                        evolutivas de usuarios digitales. Aspiramos a ser reconocidos como la primera opción cuando se 
+                        trata de innovación y calidad tecnológica.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipo-section">
+            <div class="equipo-titulo">
+                <h2>Nuestro equipo</h2>
+                <p>Conoce a los profesionales que hacen posible TechNova</p>
+            </div>
+
+            <div id="desarrolladores-container" class="desarrolladores-grid">
+                <p class="loading-message">
+                    <i class="fa-solid fa-spinner fa-spin"></i> Cargando equipo...
+                </p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-
+        <div class="div1">
+            <p>Nuestras Políticas</p>
+            <a href="#">Política de cookies</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+        <div class="div2">
+            <p>Enlaces directos</p>
+            <a href="#">Inicia Sesión</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./contacto.html">Contactanos</a>
+        </div>
+        <div class="div3">
+            <div class="container-redes">
+                <h4>Siguenos en:</h4>
+                <div class="links-sociales">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="../resources/img/logo.jpg" alt="" width="50px" height="50px">
+                <h1>TechNova</h1>
+            </div>
+        </div>
     </footer>
 
+    <script src="../js/nosotros.js"></script>
 </body>
 
 </html>

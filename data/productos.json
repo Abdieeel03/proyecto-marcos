@@ -7,7 +7,25 @@
             "categoria": "audio",
             "precio": 89.99,
             "imagen": "../resources/img/Audifonos.jpg",
-            "descripcion": "Audífonos inalámbricos con cancelación de ruido y batería de larga duración."
+            "descripcion": "Audífonos inalámbricos con cancelación de ruido y batería de larga duración.",
+            "descripcionDetallada": "Los audífonos Bluetooth X15 ofrecen una experiencia de audio premium con cancelación activa de ruido, perfectos para música y llamadas. Con tecnología de última generación, estos audífonos proporcionan un sonido cristalino y graves profundos.",
+            "caracteristicas": [
+                "Cancelación activa de ruido (ANC)",
+                "Batería de hasta 30 horas",
+                "Bluetooth 5.2 con conexión estable",
+                "Micrófono incorporado de alta calidad",
+                "Resistente al agua IPX4",
+                "Controles táctiles intuitivos"
+            ],
+            "especificaciones": {
+                "Conectividad": "Bluetooth 5.2",
+                "Autonomía": "30 horas",
+                "Tiempo de carga": "2 horas",
+                "Alcance": "10 metros",
+                "Peso": "250g"
+            },
+            "stock": 15,
+            "garantia": "12 meses"
         },
         {
             "id": 2,
@@ -16,7 +34,24 @@
             "categoria": "audio",
             "precio": 45.99,
             "imagen": "../resources/img/Audifonos2.jpg",
-            "descripcion": "Adorables audífonos con diseño de orejas de gato y luces LED."
+            "descripcion": "Adorables audífonos con diseño de orejas de gato y luces LED.",
+            "descripcionDetallada": "Diseño único y encantador con orejas de gato iluminadas. Perfectos para adolescentes y amantes de los gatos. Combinan estilo y funcionalidad con una calidad de sonido sorprendente.",
+            "caracteristicas": [
+                "Diseño de orejas de gato con luces LED RGB",
+                "3 modos de iluminación personalizables",
+                "Sonido estéreo de alta calidad",
+                "Almohadillas suaves y cómodas",
+                "Cable desmontable de 1.5m",
+                "Micrófono retráctil"
+            ],
+            "especificaciones": {
+                "Conectividad": "Cable 3.5mm + Bluetooth",
+                "Autonomía": "15 horas (con LED)",
+                "Tiempo de carga": "1.5 horas",
+                "Peso": "200g"
+            },
+            "stock": 23,
+            "garantia": "6 meses"
         },
         {
             "id": 3,
@@ -25,7 +60,25 @@
             "categoria": "audio",
             "precio": 129.99,
             "imagen": "../resources/img/parlante.jpg",
-            "descripcion": "Altavoz portátil resistente al agua con sonido potente."
+            "descripcion": "Altavoz portátil resistente al agua con sonido potente.",
+            "descripcionDetallada": "El parlante T7 Lite ofrece un sonido de 360 grados con graves profundos. Su diseño resistente al agua lo hace perfecto para llevar a la playa, piscina o cualquier aventura al aire libre.",
+            "caracteristicas": [
+                "Resistencia al agua IP67",
+                "Sonido 360 grados",
+                "Graves potentes con tecnología BassBoost",
+                "Batería de 20 horas",
+                "Función de carga USB para otros dispositivos",
+                "Conexión dual para emparejar dos parlantes"
+            ],
+            "especificaciones": {
+                "Conectividad": "Bluetooth 5.0",
+                "Potencia": "20W",
+                "Autonomía": "20 horas",
+                "Tiempo de carga": "3 horas",
+                "Peso": "650g"
+            },
+            "stock": 10,
+            "garantia": "18 meses"
         },
         {
             "id": 4,
@@ -34,7 +87,25 @@
             "categoria": "accesorios",
             "precio": 35.99,
             "imagen": "../resources/img/cargador-portatil.jpg",
-            "descripcion": "Batería portátil de carga rápida para todos tus dispositivos móviles."
+            "descripcion": "Batería portátil de carga rápida para todos tus dispositivos móviles.",
+            "descripcionDetallada": "Power Bank compacto de Xiaomi con capacidad de 10.000mAh. Ideal para mantener tus dispositivos cargados durante todo el día. Compatible con carga rápida y múltiples protecciones de seguridad.",
+            "caracteristicas": [
+                "Capacidad de 10.000mAh",
+                "Carga rápida 22.5W",
+                "Doble puerto USB de salida",
+                "Puerto USB-C bidireccional",
+                "Indicador LED de batería",
+                "Protección contra sobrecarga y cortocircuito"
+            ],
+            "especificaciones": {
+                "Capacidad": "10.000mAh",
+                "Input": "USB-C 18W",
+                "Output": "USB-A 22.5W",
+                "Tiempo de recarga": "4 horas",
+                "Peso": "225g"
+            },
+            "stock": 30,
+            "garantia": "12 meses"
         },
         {
             "id": 5,
@@ -43,7 +114,25 @@
             "categoria": "camaras",
             "precio": 179.99,
             "imagen": "../resources/img/camara.png",
-            "descripcion": "Cámara web profesional para streaming con grabación Full HD."
+            "descripcion": "Cámara web profesional para streaming con grabación Full HD.",
+            "descripcionDetallada": "La C922 Pro es la elección perfecta para streamers y profesionales. Ofrece grabación Full HD 1080p a 30fps o 720p a 60fps, ideal para streaming fluido y videoconferencias profesionales.",
+            "caracteristicas": [
+                "Grabación Full HD 1080p a 30fps",
+                "720p a 60fps para streaming fluido",
+                "Corrección de luz automática",
+                "Enfoque automático",
+                "Micrófonos estéreo duales",
+                "Fondo reemplazable con ChromaCam"
+            ],
+            "especificaciones": {
+                "Resolución": "1920 x 1080 pixels",
+                "FPS": "30fps (1080p) / 60fps (720p)",
+                "Campo de visión": "78 grados",
+                "Enfoque": "Automático",
+                "Conexión": "USB 2.0"
+            },
+            "stock": 8,
+            "garantia": "24 meses"
         },
         {
             "id": 6,
@@ -52,7 +141,25 @@
             "categoria": "gaming",
             "precio": 199.99,
             "imagen": "../resources/img/teclado.png",
-            "descripcion": "Teclado mecánico gaming con iluminación RGB personalizable."
+            "descripcion": "Teclado mecánico gaming con iluminación RGB personalizable.",
+            "descripcionDetallada": "Teclado mecánico premium diseñado para gamers profesionales. Con switches mecánicos de alta precisión, iluminación RGB personalizable por tecla y macros programables para mejorar tu rendimiento.",
+            "caracteristicas": [
+                "Switches mecánicos Cherry MX Red",
+                "Iluminación RGB por tecla",
+                "6 teclas macro programables",
+                "Reposamuñecas magnético",
+                "Anti-ghosting completo",
+                "Software de personalización avanzado"
+            ],
+            "especificaciones": {
+                "Tipo de switch": "Cherry MX Red",
+                "Iluminación": "RGB 16.8M colores",
+                "Conexión": "USB 3.0",
+                "Tasa de refresco": "1000Hz",
+                "Peso": "1.2kg"
+            },
+            "stock": 12,
+            "garantia": "24 meses"
         },
         {
             "id": 7,
@@ -60,8 +167,26 @@
             "marca": "GameTech",
             "categoria": "gaming",
             "precio": 89.99,
-            "imagen": "../resources/img/mouse-gamer.jpg",
-            "descripcion": "Mouse inalámbrico para gaming con alta precisión y batería duradera."
+            "imagen": "../resources/img/mouse-gamer.webp",
+            "descripcion": "Mouse inalámbrico para gaming con alta precisión y batería duradera.",
+            "descripcionDetallada": "Mouse gaming inalámbrico de alto rendimiento con sensor óptico de última generación. Sin lag, con batería de larga duración y diseño ergonómico para sesiones de juego prolongadas.",
+            "caracteristicas": [
+                "Sensor óptico de 16.000 DPI",
+                "Conexión inalámbrica 2.4GHz sin lag",
+                "Batería de hasta 70 horas",
+                "7 botones programables",
+                "Iluminación RGB personalizable",
+                "Peso ajustable"
+            ],
+            "especificaciones": {
+                "DPI": "16.000 máximo",
+                "Botones": "7 programables",
+                "Autonomía": "70 horas",
+                "Conexión": "2.4GHz + Bluetooth",
+                "Peso": "95g"
+            },
+            "stock": 18,
+            "garantia": "18 meses"
         },
         {
             "id": 8,
@@ -69,8 +194,26 @@
             "marca": "ConnectPro",
             "categoria": "accesorios",
             "precio": 59.99,
-            "imagen": "../resources/img/hub-ugreen.webp",
-            "descripcion": "Hub multipuerto con HDMI 4K y múltiples conexiones."
+            "imagen": "../resources/img/hub.webp",
+            "descripcion": "Hub multipuerto con HDMI 4K y múltiples conexiones.",
+            "descripcionDetallada": "Expande las capacidades de tu laptop con este hub 7 en 1. Incluye salida HDMI 4K, puertos USB 3.0, lector de tarjetas SD/TF y puerto de carga USB-C para mantener tu dispositivo alimentado.",
+            "caracteristicas": [
+                "Puerto HDMI 4K a 30Hz",
+                "3 puertos USB 3.0 (5Gbps)",
+                "Puerto USB-C PD de 100W",
+                "Lector de tarjetas SD y microSD",
+                "Diseño compacto y portátil",
+                "Compatible con Windows, Mac, Linux"
+            ],
+            "especificaciones": {
+                "Puertos": "7 (HDMI, 3xUSB, USB-C PD, SD, microSD)",
+                "Velocidad USB": "5Gbps",
+                "Resolución HDMI": "4K@30Hz",
+                "Material": "Aluminio",
+                "Peso": "85g"
+            },
+            "stock": 25,
+            "garantia": "12 meses"
         },
         {
             "id": 9,
@@ -79,7 +222,25 @@
             "categoria": "accesorios",
             "precio": 39.99,
             "imagen": "../resources/img/soporte-laptop.webp",
-            "descripcion": "Soporte ergonómico ajustable para laptop con mejor ventilación."
+            "descripcion": "Soporte ergonómico ajustable para laptop con mejor ventilación.",
+            "descripcionDetallada": "Mejora tu postura y productividad con este soporte ergonómico. Ajustable en altura y ángulo, proporciona una ventilación óptima para tu laptop y reduce la fatiga del cuello y espalda.",
+            "caracteristicas": [
+                "Ajustable en altura (15cm - 40cm)",
+                "6 niveles de ángulo",
+                "Diseño con ventilación optimizada",
+                "Material de aluminio resistente",
+                "Plegable y portátil",
+                "Compatible con laptops de 10-17 pulgadas"
+            ],
+            "especificaciones": {
+                "Material": "Aluminio + silicona",
+                "Capacidad": "Hasta 10kg",
+                "Compatibilidad": "10-17 pulgadas",
+                "Altura ajustable": "15-40cm",
+                "Peso": "950g"
+            },
+            "stock": 20,
+            "garantia": "12 meses"
         },
         {
             "id": 10,
@@ -87,8 +248,26 @@
             "marca": "GameSound",
             "categoria": "gaming",
             "precio": 149.99,
-            "imagen": "../resources/img/auriculares-gamer.jpg",
-            "descripcion": "Auriculares gaming con sonido surround y micrófono profesional."
+            "imagen": "../resources/img/auriculares-gamer.webp",
+            "descripcion": "Auriculares gaming con sonido surround y micrófono profesional.",
+            "descripcionDetallada": "Auriculares gaming profesionales con sonido surround 7.1 virtual. Diseñados para gamers competitivos, ofrecen audio posicional preciso y un micrófono con cancelación de ruido para comunicación cristalina.",
+            "caracteristicas": [
+                "Sonido surround 7.1 virtual",
+                "Drivers de 50mm",
+                "Micrófono extraíble con cancelación de ruido",
+                "Almohadillas de espuma viscoelástica",
+                "Estructura de aluminio y acero",
+                "Cable trenzado de 2m"
+            ],
+            "especificaciones": {
+                "Drivers": "50mm",
+                "Frecuencia": "20Hz - 20kHz",
+                "Impedancia": "32 Ohms",
+                "Conexión": "USB + 3.5mm",
+                "Peso": "320g"
+            },
+            "stock": 14,
+            "garantia": "24 meses"
         },
         {
             "id": 11,
@@ -97,7 +276,25 @@
             "categoria": "camaras",
             "precio": 299.99,
             "imagen": "../resources/img/camara-4k.webp",
-            "descripcion": "Cámara de acción 4K resistente al agua para deportes extremos."
+            "descripcion": "Cámara de acción 4K resistente al agua para deportes extremos.",
+            "descripcionDetallada": "Captura tus aventuras en calidad 4K con esta cámara de acción. Resistente al agua hasta 30m, estabilización de imagen avanzada y múltiples modos de grabación para cualquier situación.",
+            "caracteristicas": [
+                "Grabación 4K a 60fps",
+                "Resistente al agua hasta 30m",
+                "Estabilización de imagen HyperSmooth",
+                "Pantalla táctil de 2 pulgadas",
+                "Control por voz",
+                "WiFi y Bluetooth integrados"
+            ],
+            "especificaciones": {
+                "Resolución": "4K a 60fps",
+                "Sensor": "20MP",
+                "Resistencia": "30m bajo agua",
+                "Batería": "1350mAh (90 min grabación)",
+                "Peso": "118g"
+            },
+            "stock": 7,
+            "garantia": "24 meses"
         },
         {
             "id": 12,
@@ -106,7 +303,25 @@
             "categoria": "audio",
             "precio": 79.99,
             "imagen": "../resources/img/altavoz-inteligente.jpg",
-            "descripcion": "Altavoz inteligente con asistente de voz y control del hogar."
+            "descripcion": "Altavoz inteligente con asistente de voz y control del hogar.",
+            "descripcionDetallada": "Transforma tu hogar con este altavoz inteligente. Controla tus dispositivos smart home, reproduce música, establece recordatorios y obtén información con solo tu voz. Compatible con los principales asistentes.",
+            "caracteristicas": [
+                "Asistente de voz integrado",
+                "Control de dispositivos smart home",
+                "Audio de 360 grados",
+                "Sonido estéreo premium",
+                "WiFi de doble banda",
+                "Compatible con Spotify, Apple Music, etc."
+            ],
+            "especificaciones": {
+                "Potencia": "15W",
+                "Conectividad": "WiFi 2.4/5GHz + Bluetooth",
+                "Asistente": "Alexa / Google Assistant",
+                "Micrófonos": "4 array",
+                "Peso": "540g"
+            },
+            "stock": 16,
+            "garantia": "12 meses"
         }
     ]
 }

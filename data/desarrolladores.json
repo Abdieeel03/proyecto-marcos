@@ -1,0 +1,90 @@
+{
+    "desarrolladores": [
+        {
+            "id": 1,
+            "nombre": "Melanie Medina",
+            "rol": "Coordinadora",
+            "foto": "../resources/img/dev/melanie.jpeg",
+            "habilidades": [
+                "Desarrollo Frontend y Backend",
+                "Metodologías Ágiles",
+                "Liderazgo de Equipos"
+            ],
+            "tecnologias": [
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "MySQL"
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Leslie Tinoco",
+            "rol": "Desarrollador Frontend",
+            "foto": "../resources/img/dev/leslie.jpeg",
+            "habilidades": [
+                "Desarrollo Responsive",
+                "Animaciones y Transiciones",
+                "Testing Frontend"
+            ],
+            "tecnologias": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Git",
+                "MySQL"
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Marcelo Postigo",
+            "rol": "Desarrollador Frontend",
+            "foto": "../resources/img/dev/marcelo.jpeg",
+            "habilidades": [
+                "APIs RESTful",
+                "Seguridad y Autenticación",
+                "Optimización de Consultas"
+            ],
+            "tecnologias": [
+                "React",
+                "HTML",
+                "JavaScript",
+                "MySQL",
+                "AWS"
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "Juan Marcelo",
+            "rol": "Diseñador UI/UX",
+            "foto": "../resources/img/dev/juan.webp",
+            "habilidades": [
+                "Diseño de Experiencia de Usuario",
+                "Prototipado Interactivo",
+                "Diseño de Interfaces UI/UX"
+            ],
+            "tecnologias": [
+                "Figma",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "id": 5,
+            "nombre": "Christopher Mejía",
+            "rol": "Diseñador UI/UX",
+            "foto": "../resources/img/dev/christopher.jpeg",
+            "habilidades": [
+                "Diseño de Interfaces UI/UX",
+                "Prototipado Interactivo",
+                "Diseño de Interfaces UI/UX"
+            ],
+            "tecnologias": [
+                "Figma",
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        }
+    ]
+}

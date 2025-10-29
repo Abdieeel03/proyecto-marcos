@@ -1,35 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNova</title>
-    <link rel="stylesheet" href="Estilos.css">
+    <link rel="stylesheet" href="../css/estilos-generales.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contacto.css">
     <script src="https://kit.fontawesome.com/be11f56c4f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../favicon.jpg" type="image/x-jpg">
+    <title>Contacto - TechNova</title>
 </head>
 
 <body>
     <header>
-        <div class="header-logo">
-            <img src="Imagenes/logo.JPG" alt="" width="60px" height="60px">
-            <h1 class="titulo" tabindex="0">TechNova</h1>
+        <a class="header-link" href="../index.html">
+            <img class="logo" src="../resources/img/logo.jpg" alt="Logo">
+            <h1>TechNova</h1>
+        </a>
+        <div class="header-botones">
+            <a href="#" class="btn" role="button">Iniciar sesión</a>
+            <a href="#" class="btn" role="button">Regístrate</a>
         </div>
     </header>
+
     <nav>
         <ul>
-            <li><a href="Inicio.html">Inicio</a></li>
-            <li><a href="Productos.html">Productos</a></li>
-            <li><a href="Nosotros.html">Nosotros</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
     </nav>
 
+    <main class="contacto-main">
+        <div class="contacto-header">
+            <h1>Contáctanos</h1>
+            <p>¿Tienes alguna pregunta? Estamos aquí para ayudarte</p>
+        </div>
+
+        <div class="contacto-contenido">
+            <div class="contacto-info">
+                <h2>Información de Contacto</h2>
+                
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>Dirección</h3>
+                        <p>Av. Tecnología 123, Lima, Perú</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Teléfono</h3>
+                        <p>+51 999 888 777</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>contacto@technova.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                        <p>Sábados: 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formulario-contacto">
+                <h2>Envíanos un Mensaje</h2>
+                
+                <div id="mensaje-exito" class="mensaje-exito"></div>
+                <div id="mensaje-error" class="mensaje-error"></div>
+
+                <form id="formulario-contacto">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo <span style="color: #e74c3c;">*</span></label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span style="color: #e74c3c;">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+51 999 888 777">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto <span style="color: #e74c3c;">*</span></label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="soporte">Soporte Técnico</option>
+                            <option value="producto">Información de Producto</option>
+                            <option value="reclamo">Reclamo</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje <span style="color: #e74c3c;">*</span></label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-enviar">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                        <button type="button" id="btn-limpiar" class="btn-limpiar">
+                            <i class="fa-solid fa-eraser"></i> Limpiar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="mapa-container">
+            <h2>Nuestra Ubicación</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.682746939862!2d-77.04247388715822!3d-12.046373699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b5d35662c7%3A0x14206cb9c884c84f!2sLima%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1234567890123!5m2!1ses-419!2spe" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </main>
 
     <footer>
-
+        <div class="div1">
+            <p>Nuestras Políticas</p>
+            <a href="#">Política de cookies</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+        <div class="div2">
+            <p>Enlaces directos</p>
+            <a href="#">Inicia Sesión</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./contacto.html">Contactanos</a>
+        </div>
+        <div class="div3">
+            <div class="container-redes">
+                <h4>Siguenos en:</h4>
+                <div class="links-sociales">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="../resources/img/logo.jpg" alt="" width="50px" height="50px">
+                <h1>TechNova</h1>
+            </div>
+        </div>
     </footer>
 
+    <script src="../js/contacto.js"></script>
 </body>
 
 </html>

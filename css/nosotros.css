@@ -1,0 +1,333 @@
+.nosotros-main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    min-height: calc(100vh - 200px);
+}
+
+.nosotros-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #13a4d1 0%, #11a4d1 100%);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.nosotros-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección de información de la empresa */
+.empresa-info {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+}
+
+.empresa-descripcion {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.empresa-descripcion h2 {
+    color: #13a4d1;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.empresa-descripcion p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mision-vision-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.mision-card,
+.vision-card {
+    background: linear-gradient(135deg, #f6f6f6 0%, #ffffff 100%);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border-left: 5px solid #13a4d1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.mision-card:hover,
+.vision-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(19, 164, 209, 0.2);
+    border-left-width: 8px;
+}
+
+.mision-card h3,
+.vision-card h3 {
+    color: #13a4d1;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.mision-card h3 i,
+.vision-card h3 i {
+    font-size: 2rem;
+}
+
+.mision-card p,
+.vision-card p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* Sección de desarrolladores */
+.equipo-section {
+    margin-top: 4rem;
+}
+
+.equipo-titulo {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.equipo-titulo h2 {
+    color: #13a4d1;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.equipo-titulo p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.desarrolladores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.dev-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dev-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(19, 164, 209, 0.3);
+}
+
+.dev-foto-container {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #13a4d1 0%, #11a4d1 100%);
+}
+
+.dev-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.dev-card:hover .dev-foto {
+    transform: scale(1.1);
+}
+
+.dev-foto-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #13a4d1 0%, #11a4d1 100%);
+}
+
+.dev-foto-placeholder i {
+    font-size: 5rem;
+    color: white;
+    opacity: 0.8;
+}
+
+.dev-info {
+    padding: 2rem;
+}
+
+.dev-nombre {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.dev-rol {
+    color: #13a4d1;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.dev-section {
+    margin-bottom: 1.5rem;
+}
+
+.dev-section h4 {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dev-section h4 i {
+    color: #13a4d1;
+    font-size: 1rem;
+}
+
+.dev-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dev-lista li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.dev-lista li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #13a4d1;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.tecnologias-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tecnologia-tag {
+    background: linear-gradient(135deg, #13a4d1 0%, #11a4d1 100%);
+    color: white;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tecnologia-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(19, 164, 209, 0.4);
+}
+
+.loading-message {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.error-message {
+    text-align: center;
+    padding: 3rem;
+    color: #e74c3c;
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .nosotros-main {
+        padding: 2rem 1rem;
+    }
+
+    .nosotros-header h1 {
+        font-size: 2rem;
+    }
+
+    .empresa-info {
+        padding: 2rem;
+    }
+
+    .mision-vision-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .desarrolladores-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .equipo-titulo h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nosotros-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .empresa-info {
+        padding: 1.5rem;
+    }
+
+    .mision-card,
+    .vision-card {
+        padding: 1.5rem;
+    }
+
+    .dev-info {
+        padding: 1.5rem;
+    }
+
+    .dev-nombre {
+        font-size: 1.4rem;
+    }
+
+    .desarrolladores-grid {
+        grid-template-columns: 1fr;
+    }
+}
