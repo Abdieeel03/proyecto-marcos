@@ -25,7 +25,16 @@
                 "Peso": "250g"
             },
             "stock": 15,
-            "garantia": "12 meses"
+            "garantia": "12 meses",
+            "ofertaNavideña": {
+                "activa": true,
+                "descuento": 25,
+                "precioOriginal": 89.99,
+                "precioOferta": 67.49,
+                "fechaInicio": "2025-12-01",
+                "fechaFin": "2025-12-31",
+                "etiqueta": "🎄 Oferta Navideña"
+            }
         },
         {
             "id": 2,
@@ -78,7 +87,16 @@
                 "Peso": "650g"
             },
             "stock": 10,
-            "garantia": "18 meses"
+            "garantia": "18 meses",
+            "ofertaNavideña": {
+                "activa": true,
+                "descuento": 30,
+                "precioOriginal": 129.99,
+                "precioOferta": 90.99,
+                "fechaInicio": "2025-12-01",
+                "fechaFin": "2025-12-31",
+                "etiqueta": "🎄 Oferta Navideña"
+            }
         },
         {
             "id": 4,
@@ -105,7 +123,16 @@
                 "Peso": "225g"
             },
             "stock": 30,
-            "garantia": "12 meses"
+            "garantia": "12 meses",
+            "ofertaNavideña": {
+                "activa": true,
+                "descuento": 20,
+                "precioOriginal": 35.99,
+                "precioOferta": 28.79,
+                "fechaInicio": "2025-12-01",
+                "fechaFin": "2025-12-31",
+                "etiqueta": "🎄 Oferta Navideña"
+            }
         },
         {
             "id": 5,
@@ -159,7 +186,16 @@
                 "Peso": "1.2kg"
             },
             "stock": 12,
-            "garantia": "24 meses"
+            "garantia": "24 meses",
+            "ofertaNavideña": {
+                "activa": true,
+                "descuento": 35,
+                "precioOriginal": 199.99,
+                "precioOferta": 129.99,
+                "fechaInicio": "2025-12-01",
+                "fechaFin": "2025-12-31",
+                "etiqueta": "🎄 Oferta Navideña"
+            }
         },
         {
             "id": 7,
@@ -267,7 +303,16 @@
                 "Peso": "320g"
             },
             "stock": 14,
-            "garantia": "24 meses"
+            "garantia": "24 meses",
+            "ofertaNavideña": {
+                "activa": true,
+                "descuento": 28,
+                "precioOriginal": 149.99,
+                "precioOferta": 107.99,
+                "fechaInicio": "2025-12-01",
+                "fechaFin": "2025-12-31",
+                "etiqueta": "🎄 Oferta Navideña"
+            }
         },
         {
             "id": 11,
@@ -294,7 +339,16 @@
                 "Peso": "118g"
             },
             "stock": 7,
-            "garantia": "24 meses"
+            "garantia": "24 meses",
+            "ofertaNavideña": {
+                "activa": true,
+                "descuento": 40,
+                "precioOriginal": 299.99,
+                "precioOferta": 179.99,
+                "fechaInicio": "2025-12-01",
+                "fechaFin": "2025-12-31",
+                "etiqueta": "🎄 Oferta Navideña"
+            }
         },
         {
             "id": 12,

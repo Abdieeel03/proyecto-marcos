@@ -141,6 +141,8 @@
     align-items: center;
     padding-top: 1rem;
     border-top: 1px solid #eee;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .producto-precio {
@@ -185,7 +187,8 @@
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    width: 100%;
+    flex: 1;
+    min-width: 140px;
 }
 
 .btn-ver-producto:hover {
@@ -196,6 +199,174 @@
 
 .btn-ver-producto:active {
     transform: translateY(0);
+}
+
+/* Estilos para ofertas navideñas */
+.producto-tarjeta.con-oferta {
+    border: 2px solid #c0392b;
+    box-shadow: 0 8px 30px rgba(192, 57, 43, 0.3);
+}
+
+.producto-tarjeta.con-oferta:hover {
+    box-shadow: 0 15px 45px rgba(192, 57, 43, 0.4);
+}
+
+.badge-oferta-navidena {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(192, 57, 43, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    animation: pulseOferta 2s ease-in-out infinite;
+}
+
+@keyframes pulseOferta {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.badge-texto {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-descuento {
+    font-size: 1.1rem;
+    font-weight: 900;
+    background: white;
+    color: #c0392b;
+    padding: 0.2rem 0.6rem;
+    border-radius: 15px;
+}
+
+.precio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.producto-precio-original {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #95a5a6;
+    text-decoration: line-through;
+}
+
+.producto-precio {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #c0392b;
+}
+
+/* Estilos para el modal con oferta */
+.modal-oferta-navidena {
+    background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 20px rgba(192, 57, 43, 0.3);
+}
+
+.modal-oferta-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.modal-oferta-badge i {
+    font-size: 1.5rem;
+    animation: rotateBounce 3s ease-in-out infinite;
+}
+
+@keyframes rotateBounce {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-15deg);
+    }
+
+    75% {
+        transform: rotate(15deg);
+    }
+}
+
+.modal-oferta-ahorro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+}
+
+.ahorro-texto {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.ahorro-porcentaje {
+    font-size: 1.3rem;
+    font-weight: 900;
+    background: white;
+    color: #c0392b;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+}
+
+.modal-oferta-validez {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+.modal-oferta-validez i {
+    font-size: 1rem;
+}
+
+.modal-precio-container {
+    margin-bottom: 1rem;
+}
+
+.modal-precio-original {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #95a5a6;
+    text-decoration: line-through;
+    margin-bottom: 0.3rem;
+}
+
+.modal-precio {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c0392b;
 }
 
 /* Estilos del Modal */
@@ -222,6 +393,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -244,6 +416,7 @@
         transform: translateY(50px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -529,6 +702,7 @@
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -544,7 +718,7 @@
         max-width: 90%;
         padding: 2rem 3rem;
     }
-    
+
     .productos-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
@@ -555,39 +729,39 @@
     .productos-main {
         padding: 1rem 0.5rem;
     }
-    
+
     .productos-header {
         margin-bottom: 2rem;
         padding: 1.5rem 1rem;
     }
-    
+
     .productos-header h1 {
         font-size: 2rem;
     }
-    
+
     .productos-header p {
         font-size: 1rem;
     }
-    
+
     .filtros-container {
         flex-direction: column;
         gap: 0.5rem;
     }
-    
+
     .productos-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
         padding: 1.5rem 0;
     }
-    
+
     .producto-tarjeta {
         margin: 0 0.5rem;
     }
-    
+
     .producto-precio {
         font-size: 1.5rem;
     }
-    
+
     .btn-agregar-carrito {
         padding: 0.6rem 1rem;
         font-size: 0.8rem;
@@ -647,19 +821,37 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
+
     .producto-tarjeta {
         margin: 0;
     }
-    
+
     .producto-footer {
         flex-direction: column;
         gap: 1rem;
         align-items: stretch;
     }
-    
-    .btn-agregar-carrito {
+
+    .btn-agregar-carrito,
+    .btn-ver-producto {
         width: 100%;
         text-align: center;
+        min-width: unset;
+    }
+
+    .precio-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .badge-oferta-navidena {
+        top: 10px;
+        right: 10px;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    .badge-descuento {
+        font-size: 0.9rem;
     }
 }

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/carrito.css">
     <script src="https://kit.fontawesome.com/be11f56c4f.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../favicon.jpg" type="image/x-jpg">
     <title>Contacto - TechNova</title>
@@ -21,8 +23,12 @@
             <h1>TechNova</h1>
         </a>
         <div class="header-botones">
-            <a href="#" class="btn" role="button">Iniciar sesión</a>
-            <a href="#" class="btn" role="button">Regístrate</a>
+            <button onclick="abrirCarrito()" class="carrito-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="carrito-contador">0</span>
+            </button>
+            <a href="#" onclick="abrirModalLogin(); return false;" class="btn" role="button">Iniciar sesión</a>
+            <a href="#" onclick="abrirModalRegistro(); return false;" class="btn" role="button">Regístrate</a>
         </div>
     </header>
 
@@ -44,7 +50,7 @@
         <div class="contacto-contenido">
             <div class="contacto-info">
                 <h2>Información de Contacto</h2>
-                
+
                 <div class="info-item">
                     <i class="fa-solid fa-location-dot"></i>
                     <div>
@@ -81,7 +87,7 @@
 
             <div class="formulario-contacto">
                 <h2>Envíanos un Mensaje</h2>
-                
+
                 <div id="mensaje-exito" class="mensaje-exito"></div>
                 <div id="mensaje-error" class="mensaje-error"></div>
 
@@ -116,7 +122,8 @@
 
                     <div class="form-group">
                         <label for="mensaje">Mensaje <span style="color: #e74c3c;">*</span></label>
-                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
                     </div>
 
                     <div class="form-actions">
@@ -133,11 +140,9 @@
 
         <div class="mapa-container">
             <h2>Nuestra Ubicación</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.682746939862!2d-77.04247388715822!3d-12.046373699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b5d35662c7%3A0x14206cb9c884c84f!2sLima%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1234567890123!5m2!1ses-419!2spe" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.682746939862!2d-77.04247388715822!3d-12.046373699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b5d35662c7%3A0x14206cb9c884c84f!2sLima%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1234567890123!5m2!1ses-419!2spe"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
     </main>
@@ -171,6 +176,169 @@
         </div>
     </footer>
 
+    <!-- Modal de Inicio de Sesión -->
+    <div id="modal-login" class="modal-auth">
+        <div class="modal-auth-content">
+            <div class="modal-auth-header">
+                <button class="modal-close-auth" onclick="cerrarModalLogin()">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+                <h2><i class="fa-solid fa-user-circle"></i> Iniciar Sesión</h2>
+                <p>Accede a tu cuenta de TechNova</p>
+            </div>
+
+            <div class="modal-auth-body">
+                <div id="error-login" class="error-message"></div>
+
+                <form id="form-login">
+                    <div class="form-group">
+                        <label for="login-email">
+                            <i class="fa-solid fa-envelope"></i> Correo Electrónico
+                        </label>
+                        <input type="email" id="login-email" name="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">
+                            <i class="fa-solid fa-lock"></i> Contraseña
+                        </label>
+                        <input type="password" id="login-password" name="password" placeholder="Tu contraseña" required>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fa-solid fa-sign-in-alt"></i> Iniciar Sesión
+                    </button>
+                </form>
+            </div>
+
+            <div class="modal-auth-footer">
+                <p>¿No tienes una cuenta?
+                    <a onclick="cambiarARegistro()">Regístrate aquí</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Registro -->
+    <div id="modal-registro" class="modal-auth">
+        <div class="modal-auth-content">
+            <div class="modal-auth-header">
+                <button class="modal-close-auth" onclick="cerrarModalRegistro()">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+                <h2><i class="fa-solid fa-user-plus"></i> Crear Cuenta</h2>
+                <p>Únete a la comunidad TechNova</p>
+            </div>
+
+            <div class="modal-auth-body">
+                <div id="error-registro" class="error-message"></div>
+
+                <form id="form-registro">
+                    <div class="form-group">
+                        <label for="registro-nombre">
+                            <i class="fa-solid fa-user"></i> Nombre Completo
+                        </label>
+                        <input type="text" id="registro-nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registro-email">
+                            <i class="fa-solid fa-envelope"></i> Correo Electrónico
+                        </label>
+                        <input type="email" id="registro-email" name="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registro-password">
+                            <i class="fa-solid fa-lock"></i> Contraseña
+                        </label>
+                        <input type="password" id="registro-password" name="password" placeholder="Mínimo 6 caracteres"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registro-confirm-password">
+                            <i class="fa-solid fa-lock"></i> Confirmar Contraseña
+                        </label>
+                        <input type="password" id="registro-confirm-password" name="confirmPassword"
+                            placeholder="Repite tu contraseña" required>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fa-solid fa-user-plus"></i> Crear Cuenta
+                    </button>
+                </form>
+            </div>
+
+            <div class="modal-auth-footer">
+                <p>¿Ya tienes una cuenta?
+                    <a onclick="cambiarALogin()">Inicia sesión aquí</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div id="modal-carrito" class="modal-carrito">
+        <div class="modal-carrito-contenido">
+            <div class="modal-carrito-header">
+                <h2><i class="fa-solid fa-cart-shopping"></i> Mi Carrito</h2>
+                <button onclick="cerrarCarrito()" class="btn-cerrar-modal">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+
+            <div class="modal-carrito-body">
+                <div id="carrito-productos" class="carrito-productos-container">
+                    <!-- Los productos se cargarán aquí dinámicamente -->
+                </div>
+
+                <div id="carrito-resumen" class="carrito-resumen-container">
+                    <!-- El resumen se cargará aquí dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmación de Compra -->
+    <div id="modal-confirmacion" class="modal-confirmacion">
+        <div class="modal-confirmacion-contenido">
+            <div class="modal-confirmacion-icono">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h2>¡Compra Realizada!</h2>
+            <p id="confirmacion-mensaje">Tu pedido ha sido procesado exitosamente</p>
+            <button onclick="cerrarModalConfirmacion()" class="btn-confirmacion">
+                Aceptar
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal de Perfil -->
+    <div id="modal-perfil" class="modal-auth">
+        <div class="modal-auth-content">
+            <div class="modal-auth-header">
+                <h2><i class="fa-solid fa-user"></i> Mi Perfil</h2>
+                <button onclick="cerrarPerfil()" class="modal-close-auth">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+
+            <div class="modal-auth-body">
+                <div class="perfil-content active">
+                    <div class="perfil-info-section">
+                        <h3><i class="fa-solid fa-shopping-bag"></i> Historial de Compras</h3>
+                        <div id="lista-compras">
+                            <!-- Las compras se cargarán aquí dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/carrito.js"></script>
+    <script src="../js/auth.js"></script>
     <script src="../js/contacto.js"></script>
 </body>
 
