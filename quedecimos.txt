@@ -1,0 +1,8 @@
+-Página de inicio -> Les
+-Página de Productos (Mencionar ofertas navideñas -> badge) -> Marcelo
+-Página de Nosotros (Mencionar el mapa organizacional) -> Marcelo
+-Página de Contacto -> Les
+
+-Hablar sobre registrarse -> Leslie
+-Hablar sobre el login -> Marcelo
+-Hacer pruebas con el carrito -> Marcelo
