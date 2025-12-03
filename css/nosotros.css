@@ -102,6 +102,47 @@
     font-size: 1rem;
 }
 
+/* Mapa Organizacional */
+.mapa-organizacional {
+    margin-top: 4rem;
+    padding: 3rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mapa-organizacional h2 {
+    color: #13a4d1;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.mapa-organizacional h2::before {
+    content: "\f0e8";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+.mapa-organizacional img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.mapa-organizacional img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(19, 164, 209, 0.3);
+}
+
 /* Sección de desarrolladores */
 .equipo-section {
     margin-top: 4rem;
